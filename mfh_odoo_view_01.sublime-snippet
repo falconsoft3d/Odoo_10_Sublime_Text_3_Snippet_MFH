@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+        <!-- Add instructor field to existing view -->
+        <record model="ir.ui.view" id="partner_instructor_form_view">
+            <field name="name">partner.instructor</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml"> 
+               <field name="category_id" position="after" >          
+                    <field name="ruc" string="RUC:" placeholder="00000000" /> 
+               </field>                       
+            </field>
+        </record>
+    </data>
+</odoo>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>view01</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope>-->
+	<description> Odoo - Creamos una vista para herencia </description>
+</snippet>

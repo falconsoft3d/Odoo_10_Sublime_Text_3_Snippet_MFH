@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+ <odoo>
+    <data>
+        <!-- Add instructor field to existing view -->
+        <record model="ir.ui.view" id="partner_instructor_form_view">
+            <field name="name">partner.instructor</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="TabSheet">
+                        <group>
+                            <field name="ruc"/>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>view02</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope>-->
+	<description> Odoo - Vista con Paleta </description>
+</snippet>
