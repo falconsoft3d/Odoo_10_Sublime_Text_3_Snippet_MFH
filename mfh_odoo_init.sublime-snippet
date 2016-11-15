@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+# Copyright (C) 2016 MARLON FALCON HDEZ (<http://www.marlonfalcon.cl>).
+# contact: contacto@marlonfalcon.cl
+# Odoo 10
+###############################################################
+
+# __init__.py
+
+from . import models
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>init</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope>-->
+	<description> Odoo - Imprime el archivo: __init__.py </description>
+</snippet>
